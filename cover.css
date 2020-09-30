@@ -107,6 +107,7 @@ body {
 body{
   background: url("warzone.png");
 }
+<<<<<<< Updated upstream
 #mult{
   background: url("bullet.jpg");
   background-repeat: no-repeat;
@@ -121,3 +122,8 @@ body{
   background-size: cover;
 }
 
+=======
+body#bg{
+  background: url("warzone2.jpeg");
+}
+>>>>>>> Stashed changes
