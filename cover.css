@@ -107,3 +107,17 @@ body {
 body{
   background: url("warzone.png");
 }
+#mult{
+  background: url("bullet.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#warz{
+  background: url("battle.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
