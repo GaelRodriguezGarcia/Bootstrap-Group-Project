@@ -106,10 +106,6 @@ body {
 body{
   background: url("warzone3.jpeg");
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 #mult{
   background: url("bullet.jpg");
   background-repeat: no-repeat;
@@ -124,21 +120,9 @@ body{
   background-size: cover;
 }
 
-<<<<<<< HEAD
 body#bg{
   background: url("warzone2.jpeg");
 }
 body#bg{
   background: url("warzone2.jpeg");
 }
-=======
-
-body#bg{
-  background: url("warzone2.jpeg");
-}
-
-
-body#bg{
-  background: url("warzone2.jpeg");
-}
->>>>>>> master
