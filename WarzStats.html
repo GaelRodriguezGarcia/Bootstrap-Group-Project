@@ -1,82 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Warzone Stats</title>
-    <!--Bootstrap linked-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
-
-    <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Warzone Stats</title>
+      <!--Bootstrap linked-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
+      <!-- Bootstrap core CSS -->
+      <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
         }
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+<<<<<<< HEAD
+      </style>
+      <!-- Custom styles for this template -->
+      <link href="cover.css" rel="stylesheet">
+=======
       }
     </style>
     <link href="cover.css" rel="stylesheet">
+>>>>>>> master
   </head>
+  
   <body class="text-center" id="warz">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">MWA</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="leaderboards.html">Leaderboards</a>
-        <a class="nav-link active" href="WarzStats.html">Warzone Stats</a>
-        <a class="nav-link" href="multStats.html">Multiplayer Stats</a>
-      </nav>
-    </div>
-  </header>
-  <!--Inner center main text-->
-  <main role="main" class="inner cover">
-    <h1 class="cover-heading" id="warstat">Warzone-Stats</h1>
-    <p class="lead" id="warstat">&#8594;Search any players stats&#8592;</p>
-    <p class="lead">
-      <!--search button-->
-        <div class="input-group input-group-lg">
-            <div class="input-group-prepend">
-                <a href="#" class="btn btn-lg btn-secondary">Search</a>
-      <!--Input text box-->
-            </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-          </div>
-    </p>
-    <!--ps4, xbox, and pc buttons-->
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-primary active">
-          <input type="radio" name="options" id="option1" checked> Playstation</label>
-        <label class="btn btn-success">
-          <input type="radio" name="options" id="option2"> Xbox</label>
-        <label class="btn btn-dark">
-          <input type="radio" name="options" id="option3"> PC</label>
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+          <h3 class="masthead-brand">MWA</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a>
+            <a class="nav-link active" href="WarzStats.html">Warzone Stats</a>
+            <a class="nav-link" href="multStats.html">Multiplayer Stats</a>
+        </nav>
       </div>
-</main>
+    </header>
+    <!--Inner center main text-->
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading" id="warstat">Warzone-Stats</h1>
+      <p class="lead" id="warstat">&#8594;Search any players stats&#8592;</p>
+      <p class="lead">
+        <!--search button-->
+          <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                  <a href="#" class="btn btn-lg btn-secondary">Search</a>
+        <!--Input text box-->
+              </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            </div>
+      </p>
+      <!--ps4, xbox, and pc buttons-->
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="radio" name="options" id="option1" checked> Playstation</label>
+          <label class="btn btn-success">
+            <input type="radio" name="options" id="option2"> Xbox</label>
+          <label class="btn btn-dark">
+            <input type="radio" name="options" id="option3"> PC</label>
+        </div>
+    </main>
 
-<footer class="mastfoot mt-auto">
-  <div class="inner">
-    <p><p>Made by Colby Abbott & Gael Rodriguez</p>
-  </div>
+  <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p><p>Made by Colby Abbott & Gael Rodriguez</p>
+      </div>
   </footer>
-</div>
-<!--Bootstrap J.S linked-->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
+    <!--Bootstrap J.S linked-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
 </html>
