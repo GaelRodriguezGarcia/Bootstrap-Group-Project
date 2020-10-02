@@ -113,6 +113,13 @@ body{
   background-size: cover;
 }
 
+#mult2{
+  background: url("lock.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 #warz{
   background: url("battle.jpg");
   background-repeat: no-repeat;
@@ -136,6 +143,19 @@ body#bg{
   font-weight: bold;
   text-decoration: none;
 }
+
+#nav{
+  margin-left: -70px;
+  margin-right: -250px;
+  padding-top: 10px;
+  padding-left: 100px;
+
+  
+  
+  
+}
+
+
 body#warz5{
   background: url(warzone5.jpeg);
 }
