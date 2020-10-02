@@ -21,12 +21,34 @@
               <a class="nav-link" href="leaderboards.html">Leaderboards</a>
               <a class="nav-link" href="WarzStats.html">Warzone Stats</a>
               <a class="nav-link" href="multStats.html">Multiplayer Stats</a>
-              <a class="nav-link active" href="warzGameStats.html">Warzone Matches</a>
-              <a class="nav-link" href="MultGameStats.html">Multiplayer Matches</a>
+              <a class="nav-link" href="warzGameStats.html">Warzone Matches</a>
+              <a class="nav-link active" href="MultGameStats.html">Multiplayer Matches</a>
           </nav>
         </div>
       </header>
-
+      <main role="main" class="inner cover">
+            <h1 class="cover-heading" id="warstat">Warzone Matches</h1>
+            <p class="lead" id="warstat">&#8594;Search for any player&#8592;</p>
+            <p class="lead">
+              <!--search button-->
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <a href="#" class="btn btn-lg btn-secondary">Search</a>
+              <!--Input text box-->
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                  </div>
+            </p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      <input type="radio" name="options" id="option1" checked> Playstation</label>
+                    <label class="btn btn-success">
+                      <input type="radio" name="options" id="option2"> Xbox</label>
+                    <label class="btn btn-dark">
+                      <input type="radio" name="options" id="option3"> PC</label>
+                  </div>
+        </main>
+        <br>
       <table class="table table-dark" id="lead">
             <thead>
               <tr>
@@ -39,33 +61,33 @@
             <tbody>
               <tr class="table table-success">
                 <th scope="row">1</th>
-                <td>29:43</td>
-                <td>30</td>
-                <td>Solo</td>
+                <td>6:43</td>
+                <td>26</td>
+                <td>Team Deathmatch</td>
               </tr>
               <tr class="table table-danger">
                 <th scope="row">2</th>
-                <td>21:32</td>
+                <td>4:32</td>
                 <td>10</td>
-                <td>Duo</td>
+                <td>Team Deathmatch</td>
               </tr>
               <tr class="table table-danger">
                 <th scope="row">3</th>
-                <td>20:21</td>
+                <td>5:21</td>
                 <td>15</td>
-                <td>Sqaud</td>
+                <td>Domination</td>
               </tr>
               <tr class="table table-danger">
                 <th scope="row">4</th>
-                <td>22:34</td>
-                <td>21</td>
-                <td>Solo</td>
+                <td>6:34</td>
+                <td>12</td>
+                <td>Ground War</td>
               </tr>
               <tr class="table table-danger">
                 <th scope="row">5</th>
-                <td>16:28</td>
+                <td>6:28</td>
                 <td>10</td>
-                <td>Solo</td>
+                <td>Free-For-All</td>
               </tr>
             <tr class="table table-danger">
               <th scope="row">6</th>
@@ -85,6 +107,18 @@
               <td>12</td>
               <td>Solo</td>
             </tr>
+            <!--<tr class="table table-danger">
+              <th scope="row">9</th>
+              <td>15:53</td>
+              <td>14</td>
+              <td>Duo</td>
+            </tr>
+            <tr class="table table-danger">
+              <th scope="row">10</th>
+              <td>18:27</td>
+              <td>10</td>
+              <td>Solo</td>
+            </tr>-->
             </tbody>
           </table>
 
