@@ -10,7 +10,7 @@
     </head>
 
     <!--Centers and Fits the Nav Bar and Body Content correctly-->
-  <body class="text-center">
+  <body class="text-center" id="warz5">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
@@ -26,13 +26,28 @@
         </div>
       </header>
       
-      <!--Adds all the content to the center of the page-->
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Modern Warfare API</h1>
-        <p class="lead">Click below if you want to check your stats or someone elses.</p>
-        <p class="lead"><a href="WarzStats.html" class="btn btn-lg btn-secondary">Learn more</a></p>
-      </main>
-
+            <h1 class="cover-heading" id="warstat">Warzone Matches</h1>
+            <p class="lead" id="warstat">&#8594;Search for any player&#8592;</p>
+            <p class="lead">
+              <!--search button-->
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <a href="warzGameStats2.html" class="btn btn-lg btn-secondary">Search</a>
+              <!--Input text box-->
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                  </div>
+            </p>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      <input type="radio" name="options" id="option1" checked> Playstation</label>
+                    <label class="btn btn-success">
+                      <input type="radio" name="options" id="option2"> Xbox</label>
+                    <label class="btn btn-dark">
+                      <input type="radio" name="options" id="option3"> PC</label>
+                  </div>
+        </main>
       <!--Auto Fits The Footer To The Center-->
       <footer class="mastfoot mt-auto">
         <div class="inner">
