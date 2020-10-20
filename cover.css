@@ -105,6 +105,9 @@ body {
 }
 body{
   background: url("warzone3.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 #mult{
   background: url("bullet.jpg");
@@ -129,13 +132,22 @@ body{
 
 body#bg{
   background: url("warzone2.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 body#bg{
   background: url("warzone2.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #lead{
   background-color: rgba(51, 51, 51, 0.87);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #title{
@@ -146,8 +158,14 @@ body#bg{
 
 body#warz5{
   background: url(warzone5.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 body#mw{
   background: url(mw.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
