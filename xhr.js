@@ -48,15 +48,6 @@ xhr.send(data);
 
 
 
-
-
-
-
-
-
-
-
-
 const getBtn = document.getElementById('get-btn')
 const postBtn = document.getElementById('post-btn');
 
