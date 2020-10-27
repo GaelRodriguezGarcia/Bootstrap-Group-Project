@@ -11,7 +11,6 @@
       <!-- Bootstrap core CSS -->
       <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
       <link href="cover.css" rel="stylesheet">
-      <script src="xhr.js"></script>
   </head>
 
   <body class="text-center" id="mult">
@@ -37,26 +36,16 @@
     </header>
   <!--Inner center main text-->
     <main role="main" class="inner cover">
-      <h1 class="cover-heading">Multiplayer-Stats</h1>
-      <p class="lead" input type="text" id="mwPlayer">&#8594;Search any players stats&#8592;</p>
-      <p class="lead">
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-          <!--search button-->
-            <button id="get-btn" a href="#" class="btn btn-lg btn-secondary">Search</a></button>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Platform</button>
+          <div class="dropdown-menu">
+            <button class="dropdown-item 1" id="psnPlayer">PSN</a>
+            <button class="dropdown-item 2" id="xblPlayer">Xbox</a>
+            <button class="dropdown-item 3" id="battlePlayer">PC</a>
           </div>
-        <!--Input text box-->
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-      </div>
-    </p>
-    <!--ps4, xbox, and pc buttons-->
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-primary active">
-          <input type="radio" name="options" id="psnPlayer" class="post-btn" checked> Playstation</label>
-        <label class="btn btn-success">
-          <input type="radio" name="options" id="xblPlayer" class="post-btn"> Xbox</label>
-        <label class="btn btn-dark">
-          <input type="radio" name="options" id="battlePlayer" class="post-btn"> PC</label>
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
       </div>
   </main>
 
@@ -69,5 +58,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="xhr.js"></script>
   </body>
 </html>

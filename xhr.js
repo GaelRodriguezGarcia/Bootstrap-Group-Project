@@ -9,7 +9,7 @@ xhr.addEventListener("readystatechange", function () {
 	}
 });
 
-exhr.open("GET", "https://rapidapi.p.rapidapi.com/multiplayer/MintDuramax/psn");
+xhr.open("GET", "https://rapidapi.p.rapidapi.com/multiplayer/MintDuramax/psn");
 xhr.setRequestHeader("x-rapidapi-host", "call-of-duty-modern-warfare.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "339270cf41mshd309303d400772fp199434jsn8fd3dcc1061f");
 
@@ -62,13 +62,28 @@ const postBtn = document.getElementById('post-btn');
 
 const getData = () =>{
     var answer = document.getElementById('mwPlayer').value;
-    var answer2 = document.getElementById('psnPlayer').value = "psn";
-    var answer2 = document.getElementById('xblPlayer').value = "xbl";
-    var answer2 = document.getElementById('battlePlayer').value = "battle";
+    var answer2 = document.querySelector('.dropdown-item');
+    //var answer3 = document.getElementById('xblPlayer').value = "xbl";
+    //var answer4 = document.getElementById('battlePlayer').value = "battle";
     console.log(answer);
     var tops ="https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/" + answer + "/" + answer2;
     sendHttpRequest('GET', tops);
 };
+getBtn.addEventListener('click', getData)
+
+
+
+answer2.addEventListener("click", (e) => {
+    if(document.getElementsByClassName("1").value){
+        answer2 = "psn"
+    }else if(document.getElementsByClassName("2").value){
+        answer2= "xbl"
+    }else if(document.getElementsByClassName("3").value){
+        answer2= "battle"
+    }
+})
+
+
 
 const sendHttpRequest = (method, url) =>{
     const promise = new Promise((resolve, reject) =>{
@@ -103,25 +118,4 @@ const sendHttpRequest = (method, url) =>{
         };
 
         getBtn.addEventListener('click', getData)
-    
-/*const getData = () =>{
-    var answer = document.getElementById('get-btn').value;
-    console.log(answer);
-    var tops ="https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/platform/" + answer;
-    sendHttpRequest('GET', tops);
-
-    /*var main = document.getElementsByClassName('inner cover')
-    for(var i = 0; i < main.length;i++){
-        main[i].style.display = "none";
-    }
-    function onclick(){
-        var main = document.querySelectorAll('.main-class'),
-        i = 0,
-        l = main.length;
-
-        for (i; i < l; i++) {
-            main[i].style.display = 'none';
-        }
-    }
-};*/
 
