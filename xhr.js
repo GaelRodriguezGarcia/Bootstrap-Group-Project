@@ -9,20 +9,11 @@ xhr.addEventListener("readystatechange", function () {
 	}
 });
 
-exhr.open("GET", "https://rapidapi.p.rapidapi.com/multiplayer/MintDuramax/psn");
+xhr.open("GET", "https://rapidapi.p.rapidapi.com/multiplayer/MintDuramax/psn");
 xhr.setRequestHeader("x-rapidapi-host", "call-of-duty-modern-warfare.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "339270cf41mshd309303d400772fp199434jsn8fd3dcc1061f");
 
 xhr.send(data);
-
-
-
-
-
-
-
-
-
 
 
 
