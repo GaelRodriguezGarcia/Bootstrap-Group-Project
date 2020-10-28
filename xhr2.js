@@ -16,12 +16,12 @@ xhr.setRequestHeader("x-rapidapi-key", "83aa5baadbmshe7c56c599629a16p15a3d0jsn10
 
 xhr.send(data);
 
-const sendHttpRequest = (method, url) =>{
+/*const sendHttpRequest = (method, url) =>{
     const promise = new Promise((resolve, reject) =>{
     console.log(url);
     const xhr = new XMLHttpRequest();
     xhr.open(method, url);
-    xhr.onload = () => {
+    xhr.onload = () => {*/
 
 
-document.getElementById('lead').value = data;
+document.getElementById('lead').value = data.wins;
