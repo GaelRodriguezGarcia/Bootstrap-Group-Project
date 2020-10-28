@@ -35,16 +35,25 @@
     </header>
   <!--Inner center main text-->
     <main role="main" class="inner cover">
-      <div class="input-group mb-3">
+      <div class="input-group input-group-lg">
         <div class="input-group-prepend">
-          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Platform</button>
-          <div class="dropdown-menu">
-            <button class="dropdown-item 1" id="psnPlayer">PSN</a>
-            <button class="dropdown-item 2" id="xblPlayer">Xbox</a>
-            <button class="dropdown-item 3" id="battlePlayer">PC</a>
-          </div>
+          <button class="input-group-text btn btn-outline-dark" id="inputGroup-sizing-lg get-btn" placeholder="Username">Search</button>
         </div>
-        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        <input type="text" id="mwPlayer" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Username">
+      </div>
+    <div class="checkbox">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1 psnPlayer" value="option1">
+        <label class="form-check-label" for="inlineRadio1">PSN</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2 xboxPlayer" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Xbox</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3 pcPlayer" value="option3">
+        <label class="form-check-label" for="inlineRadio3">PC</label>
+    </div>
       </div>
   </main>
 

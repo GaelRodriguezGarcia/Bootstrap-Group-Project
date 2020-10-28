@@ -1,4 +1,4 @@
-const data = null;
+/*const data = null;
 
 const xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
@@ -13,36 +13,7 @@ xhr.open("GET", "https://rapidapi.p.rapidapi.com/multiplayer/MintDuramax/psn");
 xhr.setRequestHeader("x-rapidapi-host", "call-of-duty-modern-warfare.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "339270cf41mshd309303d400772fp199434jsn8fd3dcc1061f");
 
-xhr.send(data);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+xhr.send(data);*/
 
 
 
@@ -51,20 +22,47 @@ xhr.send(data);
 const getBtn = document.getElementById('get-btn')
 const postBtn = document.getElementById('post-btn');
 
+
+/*const getData = () =>{
+    var answer = document.getElementById('mwPlayer').value;
+    var answer2 = document.querySelector(".checkbox");
+    const data = null;
+
+    const xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+
+    xhr.addEventListener("readystatechange", function () {
+	    if (this.readyState === this.DONE) {
+		    console.log(this.responseText);
+	    }
+});
+    var tops ="https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/" + answer + "/" + answer2;
+    xhr.setRequestHeader("x-rapidapi-host", "call-of-duty-modern-warfare.p.rapidapi.com");
+    xhr.setRequestHeader("x-rapidapi-key", "339270cf41mshd309303d400772fp199434jsn8fd3dcc1061f");
+    sendHttpRequest('GET', tops);
+
+    xhr.send(data);
+};
+getBtn.addEventListener('click', getData)*/
+
+
+
 const getData = () =>{
     var answer = document.getElementById('mwPlayer').value;
-    var answer2 = document.querySelector('.dropdown-item');
+    var answer2 = document.querySelector(".checkbox");
     //var answer3 = document.getElementById('xblPlayer').value = "xbl";
     //var answer4 = document.getElementById('battlePlayer').value = "battle";
     console.log(answer);
     var tops ="https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/" + answer + "/" + answer2;
+    xhr.setRequestHeader("x-rapidapi-host", "call-of-duty-modern-warfare.p.rapidapi.com");
+    xhr.setRequestHeader("x-rapidapi-key", "339270cf41mshd309303d400772fp199434jsn8fd3dcc1061f");
     sendHttpRequest('GET', tops);
 };
 getBtn.addEventListener('click', getData)
 
 
 
-answer2.addEventListener("click", (e) => {
+/*answer2.addEventListener("click", (e) => {
     if(document.getElementsByClassName("1").value){
         answer2 = "psn"
     }else if(document.getElementsByClassName("2").value){
@@ -72,7 +70,23 @@ answer2.addEventListener("click", (e) => {
     }else if(document.getElementsByClassName("3").value){
         answer2= "battle"
     }
-})
+});*/
+
+document.getElementById("psnPlayer").addEventListener("click", () => {
+    if(document.getElementById("psnPlayer").checked){
+        answer2.value = "psn";
+        }
+    });
+    document.getElementById("xboxPlayer").addEventListener("click", () => {
+    if(document.getElementById("xboxPlayer").checked){
+        answer2.value= "xbl";
+        }
+    });
+    document.getElementById("pcPlayer").addEventListener("click", () => {
+    if(document.getElementById("pcPlayer").checked){
+        answer2.value= "battle";
+        }
+    });
 
 
 
