@@ -16,6 +16,8 @@ xhr.setRequestHeader("x-rapidapi-key", "83aa5baadbmshe7c56c599629a16p15a3d0jsn10
 
 xhr.send(data);
 
+xhr.onload = () => {
+	const info = JSON.parse(xhr.response);
+	console.log(info);
+}
 
-
-const info = JSON.parse(xhr.response);
