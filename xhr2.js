@@ -1,3 +1,4 @@
+//////////////////DATA SHOWS IN CONSOLE////////////
 //warzone stats snippet
 const data = null;
 

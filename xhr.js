@@ -1,4 +1,5 @@
-/*const data = null;
+//////////////////DATA SHOWS IN CONSOLE////////////
+const data = null;
 
 const xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
@@ -10,10 +11,11 @@ xhr.addEventListener("readystatechange", function () {
 });
 
 xhr.open("GET", "https://rapidapi.p.rapidapi.com/multiplayer/MintDuramax/psn");
+//API KEYS
 xhr.setRequestHeader("x-rapidapi-host", "call-of-duty-modern-warfare.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "339270cf41mshd309303d400772fp199434jsn8fd3dcc1061f");
 
-xhr.send(data);*/
+xhr.send(data);
 
 
 
@@ -53,12 +55,12 @@ const getData = () =>{
     //var answer3 = document.getElementById('xblPlayer').value = "xbl";
     //var answer4 = document.getElementById('battlePlayer').value = "battle";
     console.log(answer);
-    var tops ="https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/" + answer + "/" + answer2;
+    var tops ="https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/" + "MintDuramax" + "/" + "psn";
     xhr.setRequestHeader("x-rapidapi-host", "call-of-duty-modern-warfare.p.rapidapi.com");
     xhr.setRequestHeader("x-rapidapi-key", "339270cf41mshd309303d400772fp199434jsn8fd3dcc1061f");
     sendHttpRequest('GET', tops);
 };
-getBtn.addEventListener('click', getData)
+xhr.addEventListener('click', getData)
 
 
 
