@@ -17,7 +17,6 @@ xhr.setRequestHeader("x-rapidapi-key", "83aa5baadbmshe7c56c599629a16p15a3d0jsn10
 
 xhr.send(data);
 
-<<<<<<< HEAD
 
 xhr.onload = () => {
 	const info = JSON.parse(xhr.response);
@@ -55,11 +54,5 @@ xhr.onload = () => {
     document.getElementById('kd8').textContent = info.entries[7].values.kdRatio;
     document.getElementById('kd9').textContent = info.entries[8].values.kdRatio;
     document.getElementById('kd10').textContent = info.entries[9].values.kdRatio;
-=======
-//parse the data
-xhr.onload = () => {
-	const info = JSON.parse(xhr.response);
-	console.log(info);//diplsay the data on console
->>>>>>> master
 }
 
